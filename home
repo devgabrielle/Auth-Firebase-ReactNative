@@ -1,0 +1,91 @@
+import React from 'react';
+import { SafeAreaView, Text, StyleSheet, TouchableOpacity } from 'react-native';
+
+
+export default function Home({ navigation }) {
+    return (
+        <SafeAreaView style={styles.container}>
+            
+            <Text style={styles.txt01}> Olá!</Text>           
+       
+        <TouchableOpacity
+          style={styles.Button01}
+          activeOpacity = { .5 }
+          onPress={ ()  => navigation.navigate('Login')}>
+             <Text style={styles.TextStyle01}> LOGIN </Text>            
+         </TouchableOpacity>
+    
+
+
+         <TouchableOpacity
+          style={styles.Button02}
+          activeOpacity = { .5 }
+          onPress={ ()  => navigation.navigate('Register')}>
+             <Text style={styles.TextStyle02}> CADASTRAR-SE </Text>            
+         </TouchableOpacity>
+
+
+        </SafeAreaView>
+
+    );
+}
+
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        
+
+        backgroundColor: '#f5f5f5',
+        alignItems: 'center',
+        justifyContent: 'center'
+    },
+    txt01:{
+        fontSize: 30,
+        
+        color: 'green',
+        marginTop:0,
+        marginLeft:30,
+        marginRight:30,
+    
+    },
+    Button01: { 
+        marginTop:50,
+        paddingTop:15,
+        paddingBottom:15,
+        marginLeft:30,
+        marginRight:30,
+        backgroundColor:'green',
+        borderRadius: 200,
+        borderWidth: 1,
+        width: 250,
+        borderColor: 'green',
+        top: 100,
+      },
+     
+      TextStyle01:{
+          color:'#fff',
+          textAlign:'center',
+      },
+    
+      Button02: { 
+        marginTop:10,
+        paddingTop:15,
+        paddingBottom:15,
+        marginLeft:30,
+        marginRight:30,
+        backgroundColor:'#f5f5f5',
+        borderRadius: 200,
+        borderWidth: 1,
+        width: 250,
+        borderColor: 'green',
+        top: 100,
+        
+      },
+     
+      TextStyle02:{
+          color:'green',
+          textAlign:'center',
+      }
+
+});
