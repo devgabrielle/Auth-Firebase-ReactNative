@@ -1,5 +1,5 @@
 import React from 'react';
-import Routes from '../AppGael/src/routes';
+import Routes from '../MeuApp/src/routes';
 
 function App () {
   return (
