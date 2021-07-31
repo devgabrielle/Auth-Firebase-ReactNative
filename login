@@ -4,7 +4,7 @@ import { View, StyleSheet, TextInput, Text, TouchableOpacity } from 'react-nativ
 import firebase from '../../firebase/firebase';
 
 
-export default function Login({ navigation }) {
+export default function Login() {
 
 
     const [email, setEmail] = React.useState('');
